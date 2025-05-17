@@ -1,11 +1,12 @@
 
+import { Header } from '../components/Header';
 
-import { Container, LoadIndicator } from './styles'
+import { Container } from './styles'
 
 export  function Groups() {
   return (
     <Container>
-      <LoadIndicator />
+      <Header />
     </Container>
   );
 }
