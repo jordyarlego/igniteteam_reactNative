@@ -8,4 +8,3 @@ declare module 'styled-components/native'{
 
     export interface DefaultTheme extends ThemeType {}
 }
-declare module '*.png';
