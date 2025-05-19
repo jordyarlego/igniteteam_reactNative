@@ -1,11 +1,12 @@
 
-import { Header } from '../components/Header';
+import { Header } from '../../components/Header';
 import { FlatList } from 'react-native';
-import { Destaques } from '../components/Destaques';
-import { GroupCard } from '../components/GroudCards';
+import { Destaques } from '../../components/Destaques';
+import { GroupCard } from '../../components/GroudCards';
 import { Container } from './styles'
-import { ListEmpty } from '../components/ListEmpty';
+import { ListEmpty } from '../../components/ListEmpty';
 import { useState } from 'react';
+import { Button } from '../../components/Button';
 
 export  function Groups() {
 
@@ -27,7 +28,7 @@ export  function Groups() {
       />
 
 
-      
+      <Button title="Criar novo grupo" onPress={() => {}} />
     </Container>
   );
 }

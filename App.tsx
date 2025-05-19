@@ -3,7 +3,7 @@ import { ThemeProvider} from 'styled-components/native'
 import theme from './src/theme'
 import { useFonts, Roboto_400Regular, Roboto_700Bold} from '@expo-google-fonts/roboto'
 import { Loading } from './src/components/loading'
-import { Groups } from './src/Groups';
+import { Groups } from './src/Screens/Groups';
 import { StatusBar } from 'react-native'
 
 export default function App() {
