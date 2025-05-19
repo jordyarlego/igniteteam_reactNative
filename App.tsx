@@ -3,7 +3,7 @@ import { ThemeProvider} from 'styled-components/native'
 import theme from './src/theme'
 import { useFonts, Roboto_400Regular, Roboto_700Bold} from '@expo-google-fonts/roboto'
 import { Loading } from './src/components/loading'
-import { Groups } from './src/Screens/Groups';
+import { Routes } from './src/Routes'
 import { StatusBar } from 'react-native'
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-        {fontsLoaded ? <Groups /> : <Loading />}
+        {fontsLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
     
   );

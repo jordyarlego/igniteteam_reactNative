@@ -1,6 +1,7 @@
 
 import { Header } from '../../components/Header';
 import { FlatList } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Destaques } from '../../components/Destaques';
 import { GroupCard } from '../../components/GroudCards';
 import { Container } from './styles'
@@ -11,6 +12,11 @@ import { Button } from '../../components/Button';
 export  function Groups() {
 
   const [groups, setGroups] = useState<string[]>([]);
+  
+  const navigation = useNavigation();
+  function handleNewGroup() {
+    navigation.navigate('newGroup');
+  }
 
 
 
@@ -28,7 +34,7 @@ export  function Groups() {
       />
 
 
-      <Button title="Criar novo grupo" onPress={() => {}} />
+      <Button title="Criar novo grupo" onPress={handleNewGroup} />
     </Container>
   );
 }
