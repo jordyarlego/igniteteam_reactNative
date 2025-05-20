@@ -9,7 +9,7 @@ export const Container = styled(TextInput).attrs(({ theme }) => ({
 flex: 1;
 min-height: 56px;
 max-height: 56px;
-background-color: ${({ theme }) => theme.COLORS.GRAY_700};
+background-color: ${({ theme }) => theme.COLORS.GRAY_500};
 color: ${({ theme }) => theme.COLORS.WHITE};
 font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
 font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
